@@ -82,22 +82,18 @@
                 </div>
             </div>
             <p class="ip">IP (eagler): <strong>edu.calculustutor.xyz</strong></p>
-            <p class="ip">IP (vanilla): <strong>learn.calculustutor.xyz:25567</strong></p>
+            <p class="ip">IP (vanilla): <strong>learn.calculustutor.xyz:</strong></p>
             <p class="version">Server version: <strong>1.12.2</strong></p>
             <p class="level">World: <strong>world</strong></p>
             <p class="players">Max players: <strong>67</strong></p>
             <p class="mode">Online mode: <strong>false</strong></p>
             <p class="start">Last start (log): <strong>08:30:38</strong></p>
             <p class="status">Live status: <span id="server-status"><span class="dot offline"></span> Unknown</span></p>
-            <div class="status-check">
-                <label for="status-host">Check host:</label>
-                <input id="status-host" placeholder="host or host:port" value="learn.calculustutor.xyz:25567">
-                <button id="check-status-btn">Check live status</button>
-                <p class="gallery-note">Uses a public status API; if your server is local/offline the API won't see it.
+            <div class="status-check"
                 </p>
             </div>
             <p class="connect">To join (vanilla), open Minecraft → Multiplayer → Add Server →
-                <em>learn.calculustutor.xyz:25567</em>
+                <em>learn.calculustutor.xyz</em>
             </p>
         </aside>
 
@@ -107,7 +103,7 @@
                 <div class="stat-card">
                     <h4>Basic</h4>
                     <p>Version: <strong>1.12.2</strong></p>
-                    <p>Port: <strong>25567</strong></p>
+                    <p>Port: <strong>6767</strong></p>
                     <p>World: <strong>world</strong></p>
                     <p>Max players: <strong>67</strong></p>
                     <p>Online mode: <strong>false</strong> (offline server)</p>
@@ -151,13 +147,7 @@
                 <h4>FAQ</h4>
                 <p><strong>Q:</strong> Why is the server in offline mode?<br><strong>A:</strong> This server accepts
                     offline-mode connections (not authenticated with Mojang). This is convenient for offline/private
-                    setups but is insecure for public servers — usernames can be spoofed.</p>
-                <p><strong>Q:</strong> Can visitors see live player counts?<br><strong>A:</strong> The page includes a
-                    public status-checker (top of the server panel). If your server is LAN-only or behind NAT, the
-                    public API will report it as offline even when players are connected.</p>
-                <p><strong>Q:</strong> Want more automation?<br><strong>A:</strong> I can add a local poller script
-                    (Python) that uses mcstatus and writes a small JSON file in this workspace; the page can fetch it
-                    when you run the poller on the host machine.</p>
+                    setups but is insecure for public servers — usernames can be spoofed.</p></p>
             </div>
         </section>
     </main>
