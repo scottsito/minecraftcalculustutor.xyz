@@ -89,10 +89,17 @@
             <p class="mode">Online mode: <strong>false</strong></p>
             <p class="start">Last start (log): <strong>08:30:38</strong></p>
             <p class="status">Live status: <span id="server-status"><span class="dot offline"></span> Unknown</span></p>
+  <p class="status">Live status: <span id="server-status"><span class="dot offline"></span> Unknown</span></p>
+            <div class="status-check">
+                <label for="status-host">Check host:</label>
+                <input id="status-host" placeholder="host or host:port" value="learn.calculustutor.xyz:25567">
+                <button id="check-status-btn">Check live status</button>
+                <p class="gallery-note">Uses a public status API; if your server is local/offline the API won't see it.
             <div class="status-check"
                 </p>
             </div>
             <p class="connect">To join (vanilla), open Minecraft → Multiplayer → Add Server →
+                <em>learn.calculustutor.xyz</em>
                 <em>learn.calculustutor.xyz</em>
             </p>
         </aside>
