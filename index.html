@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>My Minecraft Server — Features</title>
+    <link rel="icon" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <h1 class="logo">Eaktek server • No rules</h1>
+            <p class="tag">Anarchy-inspired Minecraft server — chaos, history, community.</p>
+        </div>
+        <nav class="main-nav">
+            <a href="#features">Features</a>
+            <a href="#server">Server</a>
+            <a href="#join" class="cta">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <h2>Welcome to the wild side of Minecraft</h2>
+                <p>Experience survival without rules. Teams, and lore</p>
+                <a id="join" class="btn-primary" href="#server">Connect: play.example.org</a>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h3>Server highlights</h3>
+            <div class="cards">
+                <article class="card">
+                    <div class="icon">⚔️</div>
+                    <h4>No rules</h4>
+                    <p>True anarchy: true grief and drama.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">🏰</div>
+                    <h4>Teams</h4>
+                    <p>Team up with your friends and fight other people</p>
+                </article>
+                <article class="card">
+                    <div class="icon">🌐</div>
+                    <h4>Community</h4>
+                    <p>Active chat and forums. Join raids, alliances, or lone survival runs.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h3>Recent screenshots</h3>
+            <div class="gallery">
+                <a href="Img/Make%20new%20friends.png" target="_blank" title="Make new friends">
+                    <img src="Img/Make%20new%20friends.png" alt="Make new friends">
+                </a>
+                <a href="Img/newendermanfarm.png" target="_blank" title="Enderman farm">
+                    <img src="Img/newendermanfarm.png" alt="Enderman farm">
+                </a>
+                <a href="Img/Newshulkerfarm.png" target="_blank" title="Shulker farm">
+                    <img src="Img/Newshulkerfarm.png" alt="Shulker farm">
+                </a>
+                <a href="Img/server%20start!.png" target="_blank" title="Server start">
+                    <img src="Img/server%20start!.png" alt="Server start">
+                </a>
+            </div>
+            <p class="gallery-note">Click images to open full size.</p>
+        </section>
+
+        <aside id="server" class="server-panel">
+            <div class="server-header">
+                <img class="server-icon" src="%232/server-icon.png" alt="server icon" width="64" height="64"
+                    onerror="this.style.display='none'">
+                <div>
+                    <h3>Server info</h3>
+                    <p class="server-name">Name: <strong>Tuffest server ever</strong></p>
+                    <p class="motd">MOTD: <em>Is this the tuffest server ever?</em></p>
+                </div>
+            </div>
+            <p class="ip">IP (eagler): <strong>edu.calculustutor.xyz</strong></p>
+            <p class="ip">IP (vanilla): <strong>learn.calculustutor.xyz:25567</strong></p>
+            <p class="version">Server version: <strong>1.12.2</strong></p>
+            <p class="level">World: <strong>world</strong></p>
+            <p class="players">Max players: <strong>67</strong></p>
+            <p class="mode">Online mode: <strong>false</strong></p>
+            <p class="start">Last start (log): <strong>08:30:38</strong></p>
+            <p class="status">Live status: <span id="server-status"><span class="dot offline"></span> Unknown</span></p>
+            <div class="status-check">
+                <label for="status-host">Check host:</label>
+                <input id="status-host" placeholder="host or host:port" value="learn.calculustutor.xyz:25567">
+                <button id="check-status-btn">Check live status</button>
+                <p class="gallery-note">Uses a public status API; if your server is local/offline the API won't see it.
+                </p>
+            </div>
+            <p class="connect">To join (vanilla), open Minecraft → Multiplayer → Add Server →
+                <em>learn.calculustutor.xyz:25567</em>
+            </p>
+        </aside>
+
+        <section class="server-stats">
+            <h3>Server stats & recent activity</h3>
+            <div class="stat-cards">
+                <div class="stat-card">
+                    <h4>Basic</h4>
+                    <p>Version: <strong>1.12.2</strong></p>
+                    <p>Port: <strong>25567</strong></p>
+                    <p>World: <strong>world</strong></p>
+                    <p>Max players: <strong>67</strong></p>
+                    <p>Online mode: <strong>false</strong> (offline server)</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Login activity (latest.log)</h4>
+                    <p>Recorded logins (approx): <strong>25</strong></p>
+                    <p>Unique recent players: <strong>20</strong></p>
+                    <ul class="players-list" id="recent-players">
+                        <!-- populated from world playerdata + usercache (sanitized) -->
+                        <li>Oak_and_fire</li>
+                        <li>BigButtBen</li>
+                        <li>Hollywood15</li>
+                        <li>i8dinner</li>
+                        <li>N***let</li>
+                        <li>Cookiedrone2115</li>
+                        <li>Jack</li>
+                        <li>Shulker_afk</li>
+                        <li>JDAWG</li>
+                        <li>Billythecoolkid</li>
+                        <li>JULIANTHEWEINER</li>
+                        <li>Reggin_HBE</li>
+                        <li>GAYBO</li>
+                        <li>gay_Sigma_Gooner</li>
+                        <li>Billythebadass</li>
+                        <li>Creeper_afk</li>
+                        <li>willow_and_sage</li>
+                        <li>bensasshairs</li>
+                        <li>HomosexualGaybo</li>
+                        <li>piss_nuke67</li>
+                    </ul>
+                </div>
+                <div class="stat-card">
+                    <h4>Recent server notes</h4>
+                    <p class="server-notes">Server started at <strong>08:30:38</strong>. MOTD is shown above. Plugins:
+                        WorldEdit, Essentials, ViaVersion and others (some failed to load). See logs for details.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h4>FAQ</h4>
+                <p><strong>Q:</strong> Why is the server in offline mode?<br><strong>A:</strong> This server accepts
+                    offline-mode connections (not authenticated with Mojang). This is convenient for offline/private
+                    setups but is insecure for public servers — usernames can be spoofed.</p>
+                <p><strong>Q:</strong> Can visitors see live player counts?<br><strong>A:</strong> The page includes a
+                    public status-checker (top of the server panel). If your server is LAN-only or behind NAT, the
+                    public API will report it as offline even when players are connected.</p>
+                <p><strong>Q:</strong> Want more automation?<br><strong>A:</strong> I can add a local poller script
+                    (Python) that uses mcstatus and writes a small JSON file in this workspace; the page can fetch it
+                    when you run the poller on the host machine.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Made By Rowen</p>
+    </footer>
+
+    <script>
+        (function () {
+            function setStatus(online, players) {
+                const statusEl = document.getElementById('server-status');
+                if (!statusEl) return;
+                statusEl.innerHTML = '';
+                const dot = document.createElement('span');
+                dot.className = 'dot ' + (online ? 'online' : 'offline');
+                statusEl.appendChild(dot);
+                const txt = document.createTextNode(online ? (' Online' + (players ? ' — ' + players.online + '/' + players.max : '')) : ' Offline');
+                statusEl.appendChild(txt);
+            }
+
+            async function checkHost(host) {
+                if (!host) return setStatus(false);
+                // mcsrvstat accepts host or host:port
+                const url = 'https://api.mcsrvstat.us/2/' + encodeURIComponent(host);
+                try {
+                    const res = await fetch(url);
+                    if (!res.ok) throw new Error('API error');
+                    const data = await res.json();
+                    if (data && data.online) {
+                        setStatus(true, { online: data.players && data.players.online ? data.players.online : 'N/A', max: data.players && data.players.max ? data.players.max : 'N/A' });
+                    } else {
+                        setStatus(false);
+                    }
+                } catch (err) {
+                    console.warn('status check failed', err);
+                    setStatus(false);
+                }
+            }
+
+            document.getElementById('check-status-btn').addEventListener('click', function () {
+                const host = document.getElementById('status-host').value.trim();
+                checkHost(host);
+            });
+            // Auto-run status check on page load for the prefilled host
+            window.addEventListener('load', function () {
+                const host = document.getElementById('status-host') && document.getElementById('status-host').value.trim();
+                if (host) checkHost(host);
+            });
+        })();
+    </script>
+
+</body>
+
+</html>
